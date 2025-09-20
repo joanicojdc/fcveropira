@@ -1,0 +1,1 @@
+web: gunicorn joanicojdc.wsgi
