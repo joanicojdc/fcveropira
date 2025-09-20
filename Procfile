@@ -1,1 +1,1 @@
-web: gunicorn joanicojdc.wsgi
+web: gunicorn fcv.wsgi
