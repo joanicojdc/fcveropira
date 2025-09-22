@@ -51,7 +51,7 @@
    <div class="header_t1 clearfix">
     <div class="col-sm-4">
 	 <div class="header_t1l clearfix">
-	   <h2><a class="col" href="index.html"><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" alt="Club Logo" class="logo"> Ver-Opira <span class="col_1">FC </span></a></h2>
+	   <h2><a class="col" href="{% url 'home' %}"><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" alt="Club Logo" class="logo"> Ver-Opira <span class="col_1">FC </span></a></h2>
 	 </div>
 	</div>
 	<div class="col-sm-4">
@@ -85,21 +85,21 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="col navbar-brand" href="index.html"><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" alt="Club Logo" class="logo">  Ver-Opira <span class="col_1">FC </span></a>
+				<a class="col navbar-brand" href="{% url 'home' %}"><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" alt="Club Logo" class="logo">  Ver-Opira <span class="col_1">FC </span></a>
 			</div>
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  	 <ul class="nav navbar-nav">
-				<li><a class="m_tag active_tab" href="index.html">Home</a></li>
+				<li><a class="m_tag active_tab" href="{% url 'home' %}">Home</a></li>
 
         	<li class="dropdown">
 					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
 					  <ul class="dropdown-menu drop_3" role="menu">
-					    <li><a href="profile.html">Profile</a></li>
-						<li><a class="border_none" href="history.html">History</a></li>
-            <li><a href="profile.html">Management</a></li>
-             <li><a href="profile.html">Academy</a></li>
+					  <li><a href="{% url 'profile' %}">Profile</a></li>
+						<li><a class="border_none" href="{% url 'history' %}">History</a></li>
+            <li><a href="{% url 'management' %}">Management</a></li>
+             <li><a href="{% url 'academy' %}">Academy</a></li>
 					  </ul>
           </li>
 
@@ -107,22 +107,22 @@
           	<li class="dropdown">
 					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Teams<span class="caret"></span></a>
 					  <ul class="dropdown-menu drop_3" role="menu">
-					    <li><a href="first-team.html">First Team</a></li>
-						<li><a class="border_none" href="reserves.html">Reserves</a></li>
-            <li><a href="youth-team.html">Youth Team</a></li>
-             <li><a href="women-team.html">Women Team</a></li>
+					    <li><a href="{% url 'first_team' %}">First Team</a></li>
+						<li><a href="{% url 'reserves' %}"> Reserves</a></li>
+						<li><a href="{% url 'youth_team' %}">Youth Team</a></li>
+						<li><a href="{% url 'women_team' %}">Women Team</a></li>
 					  </ul>
           </li>
 
 				<li class="dropdown">
 					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Fixtures & Results<span class="caret"></span></a>
 					  <ul class="dropdown-menu drop_3" role="menu">
-					    <li><a href="blog.html">Next Match</a></li>
-						<li><a class="border_none" href="blog_detail.html">Results</a></li>
-          <li><a class="border_none" href="blog_detail.html">Standings</a></li>
+					    <li><a href="{% url 'next_match' %}">Next Match</a></li>
+						<li><a class="border_none" href="{% url 'results' %}">Results</a></li>
+          <li><a class="border_none" href="{% url 'standings' %}">Standings</a></li>
 					  </ul>
           </li>
-				<li><a class="m_tag" href="news.html">News</a></li>
+				<li><a class="m_tag" href="{% url 'news' %}">News</a></li>
 				<li class="dropdown">
 					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Media<span class="caret"></span></a>
 					  <ul class="dropdown-menu drop_3" role="menu">
@@ -130,7 +130,7 @@
               <li><a href="https://www.flickr.com/photos/197920041@N06/albums/72177720329164567" target="_blank" rel="noopener noreferrer">Videos</a><li>
 					  </ul>
         </li>
-<li><a class="m_tag" href="contact.html">Contact</a></li>
+<li><a class="m_tag" href="{% url 'contact' %}">Contact</a></li>
 			</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -140,515 +140,13 @@
 	
 </section>
 
-<section id="center" class="clearfix center_home">
- <div class="center_home_m clearfix">
-   <div class="carousel slide article-slide" id="article-photo-carousel">
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner cont-slider">
-<div class="item active">
-  <img alt="abc" class="iw" src="{% static 'assetsfcv/img/1.jpg' %}">
-</div>
-<div class="item">
-  <img alt="abc" class="iw" src="{% static 'assetsfcv/img/2.jpg' %}">
-</div>
-<div class="item">
-  <img alt="abc" class="iw" src="{% static 'assetsfcv/img/3.jpg' %}">
-</div>
-<div class="item">
-  <img alt="abc" class="iw" src="{% static 'assetsfcv/img/4.jpg' %}">
-</div>
-<div class="item">
-  <img alt="abc" class="iw" src="{% static 'assetsfcv/img/5.jpg' %}">
-</div>
-<div class="item">
-  <img alt="abc" class="iw" src="{% static 'assetsfcv/img/6.jpg' %}">
-</div>
-
-  <!-- Indicators -->
-<!-- <ol class="carousel-indicators">
-  <li data-target="#article-photo-carousel" data-slide-to="0" class="active">
-    <img alt="thumb 1" src="{% static 'assetsfcv/img/1.jpg' %}">
-  </li>
-  <li data-target="#article-photo-carousel" data-slide-to="1">
-    <img alt="thumb 2" src="{% static 'assetsfcv/img/2.jpg' %}">
-  </li>
-  <li data-target="#article-photo-carousel" data-slide-to="2">
-    <img alt="thumb 3" src="{% static 'assetsfcv/img/3.jpg' %}">
-  </li>
-  <li data-target="#article-photo-carousel" data-slide-to="3">
-    <img alt="thumb 4" src="{% static 'assetsfcv/img/4.jpg' %}">
-  </li>
-  <li data-target="#article-photo-carousel" data-slide-to="4">
-    <img alt="thumb 5" src="{% static 'assetsfcv/img/5.jpg' %}">
-  </li>
-  <li data-target="#article-photo-carousel" data-slide-to="5">
-    <img alt="thumb 6" src="{% static 'assetsfcv/img/6.jpg' %}">
-  </li>
-</ol> -->
-
-</div>
-   <div class="center_home_mi clearfix">
-    <h1>TEAMWORK IS AT THE CORE<br> OF OUR SUCCESS </h1>
-	<!-- <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Integer Nec Odio Praesent Libero.</p>
-	<h5><a class="button" href="#">READ MORE <i class="fa fa-chevron-right"></i></a></h5>
-	<h5><a class="button_1" href="#">SEE MORE <i class="fa fa-chevron-right"></i></a></h5> -->
-   </div>
- </div>
- 
-</section>
 
 
 
-
-<!-- ==================== Section Modern Match News ==================== -->
-<section id="match-news" class="py-5 bg-light">
-  <div class="container-fluid">
-    <!-- Section Title -->
-    <div class="section-title text-center mb-5">
-      <h3 class="fw-bold text-uppercase page-title">Latest News</h3>
-      <p class="lead text-muted">
-        The latest news on the FCV website is as follows. Click the headline to read the full article.(Match Result Coming Soon)
-         
-      </p>
-     
-    </div>
-
-  
-  <!-- Blog Grid -->
-<div class="row g-4">
-  <!-- Blog Card 1 -->
-  <div class="col-lg-3 col-md-6 col-sm-12">
-    <div class="blog1ri clearfix shadow-lg rounded-4 overflow-hidden border-0">
-      <a href="blog_detail.html">
-        <img src="{% static 'assetsfcv/img/1.jpg' %}" class="w-100 iw" alt="Team A vs Team B">
-      </a>
-      <div class="p-3">
-        <h6 class="text-muted">19 Sep 2025</h6>
-        <h5 class="mb-2">
-          <a href="blog_detail.html" class="text-dark">Team A vs Team B</a>
-        </h5>
-        <p class="font_16 text-muted">
-          The match ended 2-1 in favor of Team A. Goals were scored in the 30th and 75th minutes.
-        </p>
-        <h5 class="normal col_2 mb-2">
-          <a class="col_2 text-primary" href="blog_detail.html">Foot Goal</a>, 
-          <a class="col_2 text-primary" href="blog_detail.html">Top Stories</a>
-        </h5>
-      </div>
-    </div>
-  </div>
-
-  <!-- Blog Card 2 -->
-  <div class="col-lg-3 col-md-6 col-sm-12">
-    <div class="blog1ri clearfix shadow-lg rounded-4 overflow-hidden border-0">
-      <a href="blog_detail.html">
-        <img src="{% static 'assetsfcv/img/2.jpg' %}" class="w-100 iw" alt="Team C vs Team D">
-      </a>
-      <div class="p-3">
-        <h6 class="text-muted">19 Sep 2025</h6>
-        <h5 class="mb-2">
-          <a href="blog_detail.html" class="text-dark">Team C vs Team D</a>
-        </h5>
-        <p class="font_16 text-muted">
-          Team D managed to hold Team C to a 1-1 draw. Team D scored in the final minute.
-        </p>
-        <h5 class="normal col_2 mb-2">
-          <a class="col_2 text-primary" href="blog_detail.html">Foot Goal</a>, 
-          <a class="col_2 text-primary" href="blog_detail.html">Top Stories</a>
-        </h5>
-      </div>
-    </div>
-  </div>
-
-  <!-- Blog Card 3 -->
-  <div class="col-lg-3 col-md-6 col-sm-12">
-    <div class="blog1ri clearfix shadow-lg rounded-4 overflow-hidden border-0">
-      <a href="blog_detail.html">
-        <img src="{% static 'assetsfcv/img/3.jpg' %}" class="w-100 iw" alt="Team E vs Team F">
-      </a>
-      <div class="p-3">
-        <h6 class="text-muted">18 Sep 2025</h6>
-        <h5 class="mb-2">
-          <a href="blog_detail.html" class="text-dark">Team E vs Team F</a>
-        </h5>
-        <p class="font_16 text-muted">
-          Team E won decisively 3-0 against Team F. Team F’s defense could not stop the attacks.
-        </p>
-        <h5 class="normal col_2 mb-2">
-          <a class="col_2 text-primary" href="blog_detail.html">Blog Post</a>, 
-          <a class="col_2 text-primary" href="blog_detail.html">Top Stories</a>
-        </h5>
-      </div>
-    </div>
-  </div>
-
-  <!-- Blog Card 4 -->
-  <div class="col-lg-3 col-md-6 col-sm-12">
-    <div class="blog1ri clearfix shadow-lg rounded-4 overflow-hidden border-0">
-      <a href="blog_detail.html">
-        <img src="{% static 'assetsfcv/img/4.jpg' %}" class="w-100 iw" alt="Team G vs Team H">
-      </a>
-      <div class="p-3">
-        <h6 class="text-muted">18 Sep 2025</h6>
-        <h5 class="mb-2">
-          <a href="blog_detail.html" class="text-dark">Team G vs Team H</a>
-        </h5>
-        <p class="font_16 text-muted">
-          The match ended 0-0. Both teams played defensively and failed to score.
-        </p>
-        <h5 class="normal col_2 mb-2">
-          <a class="col_2 text-primary" href="blog_detail.html">Blog Post</a>, 
-          <a class="col_2 text-primary" href="blog_detail.html">Top Stories</a>
-        </h5>
-      </div>
-    </div>
-  </div>
-</div>
+  {% block content %}
 
 
-
-
-
-
-<br>
-
-
-<!-- ==================== Section Scheduale ==================== -->
-
-<section id="hasil-pertandingan" class="py-5 bg-light">
-  <div class="container-fluid">
-
-    <!-- Title modern -->
-    <!-- <h1 class="page-title">SCHEDULE – Christmas Cup 2025</h1> -->
-    <h1 class="page-title">Scheduale Cup 2025 </h1>
-
-    <h4 class="text-center">Mehara-Lospalos-Timor-Leste</h4>
-    <p class="text-center">
-      Click the image to view the full pool schedule results. –(Match Result Coming Soon)
-    </p>
-
- <!-- Scheduale paste Here -->
-
-
-
-
-
-
-  <!-- ==================== LIST OF CLUB CRISTMAS CUP ==================== -->
-
-  <section class="py-5 bg-light">
-  <div class="container text-center">
-    <!-- Judul Section -->
-    <!-- <h2 class="fw-bold mb-4 page-title">Christmas Cup 2025</h2> -->
-     <h2 class="fw-bold mb-4 page-title">Cup 2025</h2>
-     
-    
-    <!-- Paragraf Instruksi -->
-    <p class="lead">
-      Explore the list of clubs participating in the Christmas Cup 2025, 
-      check the latest standings to see which teams are leading, 
-      and don’t miss today’s exciting matches to follow the action live! –(Match Result Coming Soon)
-    </p>
-    
-   
-<!-- Cristmas cup paste Here -->
-
-
-
-
-		
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-<section id="visit">
- <div class="visit_m clearfix">
-   <div class="container">
-  <div class="row">
-   <div class="visit clearfix">
-    <div class="col-sm-5">
-	 <div class="visit_l clearfix"></div>
-	</div>
-	<div class="col-sm-7">
-	 <div class="visit_r mgt clearfix">
-	  <div class="col-sm-10 space_left">
-	   <div class="visit_rl clearfix">
-	    <h4 class="mgt col">FCV Football Academy</h4>
-		<p class="col_3">  
-          The FCV Football Academy focuses on nurturing young players through technical training, tactical education,
-          and character development. Our programs are designed for all age levels with a strong emphasis on teamwork
-          and personal growth.
-        Coming Soon....</p>
-	   </div>
-	  </div>
-	  <div class="col-sm-2 space_right">
-	   <div class="visit_rr clearfix">
-	    <span class="col"><i class="fa fa-trophy"></i></span>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="visit_r clearfix">
-	  <div class="col-sm-10 space_left">
-	   <div class="visit_rl clearfix">
-	    <h4 class="mgt col">FCV Ladies Team</h4>
-		<p class="col_3"> The FCV Ladies Team provides a platform for female footballers to grow, compete, and shine.
-          We believe football is for everyone, and our women’s team is an essential part of our vision for the future.Coming Soon....</p>
-	   </div>
-	  </div>
-	  <div class="col-sm-2 space_right">
-	   <div class="visit_rr clearfix">
-	    <span class="col"><i class="fa fa-female"></i></span>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="visit_r clearfix">
-	  <div class="col-sm-10 space_left">
-	   <div class="visit_rl clearfix">
-	    <h4 class="mgt col">FCV U-12 Team</h4>
-		<p class="col_3">Shaping the Future of Football, From Youth to Pro and Stepping Stone to the Senior Team (Coming Soon....)</p>
-	   </div>
-	  </div>
-	  <div class="col-sm-2 space_right">
-	   <div class="visit_rr clearfix">
-	    <span class="col"><i class="fa fa-flag"></i></span>
-	   </div>
-	  </div>
-	 </div>
-	</div>
-   </div>
-  </div>
- </div>
- </div>
-</section>
-
-<section id="team_h">
-  <div class="container">
-    <div class="row">
-      <div class="team_h1 clearfix">
-        <div class="col-sm-12">
-          <h4 class="mgt head_1">TEAM MEMBER</h4>
-          <br>
-        </div>
-      </div>
-
-      <div class="players_1 clearfix">
-        <div class="col-sm-3">
-          <div class="players_1i text-center clearfix">
-            <img src="{% static 'assetsfcv/img/12.jpg' %}" class="iw" alt="Goalkeeper - Semp Port">
-            <h4 class="bold"><a class="col_1" href="#">Isolino Soares Da Costa</a></h4>
-            <h5>Coming Soong....</h5>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="players_1i text-center clearfix">
-            <img src="{% static 'assetsfcv/img/13.jpg' %}" class="iw" alt="Attacker - Ante Dapibus">
-            <h4 class="bold"><a class="col_1" href="#">Coming Soong....</a></h4>
-            <h5>Coming Soong....</h5>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="players_1i text-center clearfix">
-            <img src="{% static 'assetsfcv/img/14.jpg' %}" class="iw" alt="Defender - Nulla Quis">
-            <h4 class="bold"><a class="col_1" href="#">Coming Soong....</a></h4>
-            <h5>Coming Soong....</h5>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <div class="players_1i text-center clearfix">
-            <img src="{% static 'assetsfcv/img/15.jpg' %}" class="iw" alt="Midfielder - Sed Augue">
-            <h4 class="bold"><a class="col_1" href="#">Coming Soong....</a></h4>
-            <h5>Coming Soong....</h5>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="feature">
- <div class="container">
-   <div class="row">
-     <div class="feature_1 clearfix">
-	  <div class="col-sm-8">
-	   <div class="feature_1l clearfix">
-	     <h4 class="mgt head_1">FEATURED NEWS</h4><br>
-		 <div class="feature_1li clearfix">
-		  <div class="col-sm-4 space_all">
-		   <div class="feature_1lil clearfix">
-		    <!-- <a href="#"><img src="{% static 'assetsfcv/img/8.jpg' %}" height="240" class="iw" alt="abc"></a> -->
-          <a href="#"><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" height="240" class="iw" alt="abc"></a>
-        
-		   </div>
-		  </div>
-		  <div class="col-sm-8 space_all">
-		   <div class="feature_1lir clearfix">
-		    <h6 class="mgt">April 25, 2014</h6>
-			<h4><a href="#">Stay updated with the latest highlights and stories from FCV..</a></h4>
-			<p class="font_16">coming soon ....</p>
-            <hr>
-			<h5><a class="col_2" href="#">Top stories</a></h5>
-		   </div>
-		  </div>
-		 </div>
-	   </div>
-	  </div>
-	  <div class="col-sm-4">
-	   <div class="feature_1r clearfix">
-	    <h4 class="mgt head_1">MEDIA WATCH</h4><br>
-		<div class="feature_1ri clearfix">
-		 <div class="col-sm-10 space_left">
-		  <div class="feature_1ril clearfix">
-		   <p class="mgt"><a href="#">“Discover the latest coverage and insights about FCV from trusted media outlets.”coming soon ....</a></p>
-		  </div>
-		 </div>
-		 <div class="col-sm-2 space_right">
-		  <div class="feature_1rir text-right clearfix">
-		   <h3 class="mgt">22 <span class="col_2 small_tag">MAY</span></h3>
-		  </div>
-		 </div>
-		</div>
-		<div class="feature_1ri clearfix">
-		 <div class="col-sm-10 space_left">
-		  <div class="feature_1ril clearfix">
-		   <p class="mgt"><a href="#">“Stay informed with news, features, and press highlights surrounding FCV Football Club.”.coming soon ....</a></p>
-		  </div>
-		 </div>
-		 <div class="col-sm-2 space_right">
-		  <div class="feature_1rir text-right clearfix">
-		   <h3 class="mgt">21 <span class="col_2 small_tag">APR</span></h3>
-		  </div>
-		 </div>
-		</div>
-		<div class="feature_1ri clearfix">
-		 <div class="col-sm-10 space_left">
-		  <div class="feature_1ril clearfix">
-		   <p class="mgt"><a href="#">“Explore how the media is talking about FCV — from match reports to exclusive interviews.”.coming soon ....</a></p>
-		  </div>
-		 </div>
-		 <div class="col-sm-2 space_right">
-		  <div class="feature_1rir text-right clearfix">
-		   <h3 class="mgt">12 <span class="col_2 small_tag">JAN</span></h3>
-		  </div>
-		 </div>
-		</div>
-		<div class="feature_1ri clearfix">
-		 <div class="col-sm-10 space_left">
-		  <div class="feature_1ril clearfix">
-		   <p class="mgt"><a href="#">“Your gateway to press coverage, articles, and stories about FCV on every platform.”.coming soon ....</a></p>
-		  </div>
-		 </div>
-		 <div class="col-sm-2 space_right">
-		  <div class="feature_1rir text-right clearfix">
-		   <h3 class="mgt">18 <span class="col_2 small_tag">FEB</span></h3>
-		  </div>
-		 </div>
-		</div>
-	   </div>
-	  </div>
-	 </div>
-   </div>
- </div>
-</section>
-
-<section id="review_home">
- <div class="container">
-  <div class="row">
-   <div class="review_home_1 clearfix">
-	<div class="col-sm-6">
-	 <div class="review_home_1r clearfix">
-	  <img src="{% static 'assetsfcv/img/16.jpg' %}" class="iw" alt="abc">	 </div>
-    
-	</div>
-	<div class="col-sm-6">
-	 <div class="review_home_1l clearfix">
-	  <h2 class="mgt">Review Of The Season</h2>
-	  <p>“From opening day to the final whistle — the full story of FCV’s season. Coming soon ....</p>
-	  <div class="review_home_1li clearfix">
-	   <h5>STRATEGY <span class="pull-right">90%</span></h5>
-	   <div class="progress">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">            </div>
-        </div>
-	  </div>
-	  <div class="review_home_1li clearfix">
-	   <h5>DESIGN <span class="pull-right">70%</span></h5>
-	   <div class="progress">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">            </div>
-        </div>
-	  </div>
-	  <div class="review_home_1li clearfix">
-	   <h5>MARKETING <span class="pull-right">65%</span></h5>
-	   <div class="progress">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 65%">            </div>
-        </div>
-	  </div>
-	  <div class="review_home_1li clearfix">
-	   <h5>DEVELOPMENT <span class="pull-right">95%</span></h5>
-	   <div class="progress">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 95%">            </div>
-        </div>
-	  </div>
-	 </div>
-	</div>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="achieve">
- <div class="container">
-  <div class="row">
-   <div class="achieve_1 clearfix">
-    <div class="col-sm-4">
-	 <div class="achieve_1m clearfix">
-	  <div class="achieve_1mi clearfix">
-	   <img src="{% static 'assetsfcv/img/17.jpg' %}" class="iw" alt="abc">	  </div>
-	  <div class="achieve_1mi1 text-center clearfix">
-	   <span class="col"><i class="fa fa-star-o"></i></span>
-	   <h3 class="bold col">League Cup</h3>
-	   <p class="col">Coming Soon...</p>
-	   <h5><a class="button" href="#">SEE MORE <i class="fa fa-chevron-right"></i></a></h5>
-	  </div>
-	 </div>
-	</div>
-	<div class="col-sm-4">
-	 <div class="achieve_1m clearfix">
-	  <div class="achieve_1mi clearfix">
-	   <img src="{% static 'assetsfcv/img/18.jpg' %}" class="iw" alt="abc">	  </div>
-	  <div class="achieve_1mi1 text-center clearfix">
-	   <span class="col"><i class="fa fa-trophy"></i></span>
-	   <h3 class="bold col">Championship</h3>
-	   <p class="col">Coming Soon...</p>
-	   <h5><a class="button" href="#">SEE MORE <i class="fa fa-chevron-right"></i></a></h5>
-	  </div>
-	 </div>
-	</div>
-	<div class="col-sm-4">
-	 <div class="achieve_1m clearfix">
-	  <div class="achieve_1mi clearfix">
-	   <img src="{% static 'assetsfcv/img/19.jpg' %}" class="iw" alt="abc">	  </div>
-	  <div class="achieve_1mi1 text-center clearfix">
-	   <span class="col"><i class="fa fa-clock-o"></i></span>
-	   <h3 class="bold col">Associations</h3>
-	   <p class="col">Coming Soon...</p>
-	   <h5><a class="button" href="#">SEE MORE <i class="fa fa-chevron-right"></i></a></h5>
-	  </div>
-	 </div>
-	</div>
-   </div>
-  </div>
- </div>
-</section>
+  {% endblock content%} 
 
 
 <section id="footer">
