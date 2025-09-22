@@ -1,0 +1,62 @@
+   <!-- Row jadwal -->
+    <div class="row g-4">
+      <!-- Kolom 1 -->
+      <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+        <img src="{% static 'assetsfcv/img/scheduale1.jpg' %}" alt="Pool A" class="match-img preview-img">
+        <p class="fw-bold mt-2">Pool A</p>
+      </div>
+      <!-- Kolom 2 -->
+      <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+        <img src="{% static 'assetsfcv/img/scheduale2.jpg' %}" alt="Pool B" class="match-img preview-img">
+        <p class="fw-bold mt-2">Pool B</p>
+      </div>
+      <!-- Kolom 3 -->
+      <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+        <img src="{% static 'assetsfcv/img/scheduale1.jpg' %}" alt="Pool C" class="match-img preview-img">
+        <p class="fw-bold mt-2">Pool C</p>
+      </div>
+      <!-- Kolom 4 -->
+      <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+        <img src="{% static 'assetsfcv/img/scheduale2.jpg' %}" alt="Pool D" class="match-img preview-img">
+        <p class="fw-bold mt-2">Pool D</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Preview Overlay Fullscreen -->
+<div id="image-preview-overlay">
+  <span id="close-preview">&times;</span>
+  <img id="preview-img" src="" alt="Preview">
+</div>
+
+<!-- Script preview aman -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const overlay = document.getElementById('image-preview-overlay');
+  const previewImg = document.getElementById('preview-img');
+  const closeBtn = document.getElementById('close-preview');
+
+  // Klik gambar → tampilkan preview fullscreen
+  document.querySelectorAll('.preview-img').forEach(img => {
+    img.addEventListener('click', () => {
+      previewImg.src = img.src;
+      overlay.style.display = 'flex';
+    });
+  });
+
+  // Klik tombol X → tutup preview
+  closeBtn.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    previewImg.src = "";  // reset src
+  });
+
+  // Klik area gelap overlay → tutup preview
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.style.display = 'none';
+      previewImg.src = "";  // reset src
+    }
+  });
+});
+</script>

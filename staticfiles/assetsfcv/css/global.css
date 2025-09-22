@@ -589,8 +589,10 @@ background:#fff!important;
 font-size:22px!important;
 padding-top:15px!important;
 padding-bottom:15px!important;
+
  }
 
+ 
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
 border:none; 
  }

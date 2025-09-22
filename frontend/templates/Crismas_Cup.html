@@ -1,0 +1,148 @@
+ <!-- Optional: tombol navigasi -->
+    <div class="mt-4">
+      <a href="#clubs" class="btn btn-primary mx-2">LIST OF CLUB</a>
+      <a href="#standings" class="btn btn-success mx-2">Standings</a>
+      <a href="#today-match" class="btn btn-danger mx-2">Today’s Matches</a>
+    </div>
+  </div>
+</section>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="trend_4im">
+      <h4 class="head_1 text-center ">LIST OF CLUB</h4>
+      <div class="table-responsive">
+        <table class="table table-modern text-center">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Logo</th>
+              <th>Team</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" class="team-logo" alt="FCV"></td>
+              <td>FCV</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" class="team-logo" alt="SEMPER"></td>
+              <td>SEMPER</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" class="team-logo" alt="PORTA"></td>
+              <td>PORTA</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><img src="{% static 'assetsfcv/img/logo_fcv.png' %}" class="team-logo" alt="EGET CLUB"></td>
+              <td>EGET CLUB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+   <!-- ==================== STANDINGS ==================== -->
+  <div class="col-md-4">
+    <div class="trend_4im">
+      <h4 class="head_1 text-center">STANDINGS</h4>
+      <div class="table-responsive">
+        <table class="table table-modern text-center">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>TEAM</th>
+              <th>W</th>
+              <th>L</th>
+              <th>D</th>
+			  <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>FC VER OPIRA</td>
+              <td>4</td>
+              <td>3</td>
+              <td>3</td>
+			  <td>10</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>FC ZONA LESTE</td>
+              <td>5</td>
+              <td>2</td>
+              <td>3</td>
+			    <td>10</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>PORTA</td>
+              <td>3</td>
+              <td>4</td>
+              <td>3</td>
+			<td>10</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>EGET CLUB</td>
+              <td>2</td>
+              <td>5</td>
+              <td>3</td>
+			<td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== TODAY MATCH ==================== -->
+  <div class="col-md-4">
+    <div class="trend_4im">
+      <h4 class="head_1 text-center">TODAY'S MATCH</h4>
+      <div class="table-responsive">
+        <table class="table table-modern text-center">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Team A</th>
+              <th>VS</th>
+              <th>Team B</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20 Sep 2025</td>
+              <td>15:00</td>
+              <td>FCV</td>
+              <td>VS</td>
+              <td>SEMPER</td>
+              <td><span class="badge status-upcoming">Upcoming</span></td>
+            </tr>
+            <tr>
+              <td>21 Sep 2025</td>
+              <td>18:00</td>
+              <td>PORTA</td>
+              <td>VS</td>
+              <td>EGET CLUB</td>
+              <td><span class="badge status-upcoming">Upcoming</span></td>
+            </tr>
+            <tr>
+              <td>22 Sep 2025</td>
+              <td>20:00</td>
+              <td>SEMPER</td>
+              <td>VS</td>
+              <td>FCV</td>
+              <td><span class="badge status-upcoming">Upcoming</span></td>
+            </tr>
+          </tbody>
+        </table>
