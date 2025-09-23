@@ -135,7 +135,7 @@ border:none!important;
 color:#fff!important;  
   }
 .col_1{
-color:rgb(106, 4, 17)!important;
+color:rgb(0 204 255) !important
  }
 .col_2{
 color:#ffffff!important;
@@ -589,10 +589,8 @@ background:#fff!important;
 font-size:22px!important;
 padding-top:15px!important;
 padding-bottom:15px!important;
-
  }
 
- 
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
 border:none; 
  }
